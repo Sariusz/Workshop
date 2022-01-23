@@ -9,66 +9,63 @@
     --color-third: #F7F7F7;
     --color-white:#FFFFFF;
     font-family: "Open Sans", "Raleway", sans-serif;
-
 }
-.main-container{
-    width: 1325px;
-
+header{
+    width: 100vh;
 }
 .header{
     display:flex;
     width: 100%;
-    align-items: center;
     border: 1px solid white;
     box-shadow: 1px 3px 6px #00000029;
     opacity: 1;
 }
+.container-header{
+    width: 1352px;
+    display: flex;
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items: center;
+}
+
 .logo {
     color: var(--color-primary);
     font-family: "Raleway", sans-serif;
     font-size: 32px;
     font-weight: 300;
-    width: 50%;
     display: flex;
     align-items: center;
-    margin-left: 136px;
+    text-decoration: none;
+}
 
+.container-header ul{
+    display:flex;
+    justify-content: space-between;
+    letter-spacing: 3px;
+    padding:0;
 }
-.menu{
-    width:50%;
-}
-.menu a{
+.header_nav a{
     font-family: "Open Sans", sans-serif;
     font-size: 11px;
     font-weight: 700;
     color: var(--color-secondary);
-    text-decoration:none;
     display:inline-block;
-}
-.menu ul{
-    display:flex;
-    justify-content: space-between;
-    margin: 0 136px 0 0;
-    letter-spacing: 3px;
-    padding:0;
+    text-decoration:none;
 }
 .nav_link{
     border-bottom: 4px solid rgba(0 0 0 / 0%);
-    padding: 28px 18px 22px;
+    padding: 28px 26px 22px;
+    margin: 0 16px;
 }
 .nav_link:hover{
     border-color: var(--color-primary);
     color: var(--color-black);
 
 }
-/*.menu ul li:hover{
-    border-bottom: 2px solid red;
-}
-.menu ul li a:hover{
-    color: var(--color-black);*/
+
 
 
 /* w sekcji header pozostał mi do zrobienia niebieski pasek przy najechaniu na przycisk why us
  + ewentualnie sprawdzenie czy wszystkie detale są zastosowane
  Rozwiązanie: w html należało stworzyć klasę dla elementu odnośnika a i następnie dodać mu w css padding górny, prawy i dolny
- Następnie stworzyć pseudoklasę do klasy nav(.nav_link:hover) i wczytać niezbędne kolory border i tekstu*/
+ Następnie stworzyć pseudoklase do klasy nav(.nav_link:hover) i wczytać niezbędne kolory border i tekstu*/
