@@ -1,0 +1,74 @@
+:root {
+    box-sizing: border-box;
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-accent-redish: #FB3B64;
+    --color-accent-green: #55DFB4;
+    --color-black: #000000;
+    --color-secondary:#A5A5A5;
+    --color-third: #F7F7F7;
+    --color-white:#FFFFFF;
+    font-family: "Open Sans", "Raleway", sans-serif;
+
+}
+.main-container{
+    width: 1325px;
+
+}
+.header{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: 1px 3px 6px #00000029;
+    opacity: 1;
+}
+.logo {
+    color: var(--color-primary);
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 136px;
+
+}
+.menu{
+    width:50%;
+}
+.menu a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-secondary);
+    text-decoration:none;
+    display:inline-block;
+}
+.menu ul{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 136px 0 0;
+    letter-spacing: 3px;
+    padding:0;
+}
+.nav_link{
+    border-bottom: 4px solid rgba(0 0 0 / 0%);
+    padding: 28px 18px 22px;
+}
+.nav_link:hover{
+    border-color: var(--color-primary);
+    color: var(--color-black);
+
+}
+/*.menu ul li:hover{
+    border-bottom: 2px solid red;
+}
+.menu ul li a:hover{
+    color: var(--color-black);*/
+
+
+/* w sekcji header pozostał mi do zrobienia niebieski pasek przy najechaniu na przycisk why us
+ + ewentualnie sprawdzenie czy wszystkie detale są zastosowane
+ Rozwiązanie: w html należało stworzyć klasę dla elementu odnośnika a i następnie dodać mu w css padding górny, prawy i dolny
+ Następnie stworzyć pseudoklasę do klasy nav(.nav_link:hover) i wczytać niezbędne kolory border i tekstu*/
