@@ -10,7 +10,7 @@
     --color-white:#FFFFFF;
     font-family: "Open Sans", "Raleway", sans-serif;
 }
-header{
+header section{
     width: 100vh;
 }
 .header{
@@ -20,7 +20,7 @@ header{
     box-shadow: 1px 3px 6px #00000029;
     opacity: 1;
 }
-.container-header{
+.container-header {
     width: 1352px;
     display: flex;
     margin: 0 auto;
@@ -60,12 +60,45 @@ header{
 .nav_link:hover{
     border-color: var(--color-primary);
     color: var(--color-black);
+}
+.text-opening{
+    width: 1352px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 0 auto;
+    line-height: 50px;
+    position:relative;
 
+}
+.text-opening h1{
+    font-family: "Raleway", sans-serif;
+    font-weight:400;
+    font-size: 49px;
+    padding-top:100px;
+}
+.text-opening p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:var(--color-black);
+    padding: 10px;
+}
+.cta-button{
+    border: 10px solid var(--color-primary);
+    background-color:var(--color-primary);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    width:420px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-
-/* w sekcji header pozostał mi do zrobienia niebieski pasek przy najechaniu na przycisk why us
- + ewentualnie sprawdzenie czy wszystkie detale są zastosowane
- Rozwiązanie: w html należało stworzyć klasę dla elementu odnośnika a i następnie dodać mu w css padding górny, prawy i dolny
- Następnie stworzyć pseudoklase do klasy nav(.nav_link:hover) i wczytać niezbędne kolory border i tekstu*/
